@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SocialHeader" customModule="MANUDaily" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="446" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Scz-wG-PRP">
+                    <rect key="frame" x="338" y="9" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="5JI-XV-IsU"/>
+                    </constraints>
+                    <color key="tintColor" red="0.87058823529411766" green="0.074509803921568626" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="twitterHigh.png"/>
+                    <connections>
+                        <action selector="twitterSharingButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="7Lh-Qn-qFP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qN-bG-mdY">
+                    <rect key="frame" x="397" y="9" width="32" height="32"/>
+                    <color key="tintColor" red="0.87058823529999996" green="0.074509803920000006" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="googleplusHigh.png"/>
+                    <connections>
+                        <action selector="googlePlusSharingButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="G9L-xA-miT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-Pj-MFA">
+                    <rect key="frame" x="279" y="9" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="xFZ-ok-abS"/>
+                    </constraints>
+                    <color key="tintColor" red="0.87058823529411766" green="0.074509803921568626" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="facebookHigh.png">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="facebookSharingButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="taM-Bj-prx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OY-DH-YNA">
+                    <rect key="frame" x="219" y="9" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="XBb-Xy-hWh"/>
+                    </constraints>
+                    <color key="tintColor" red="0.87058823529999996" green="0.074509803920000006" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="chatHigh.png">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4OY-DH-YNA" firstAttribute="top" secondItem="gKT-Pj-MFA" secondAttribute="top" id="6If-ve-JMC"/>
+                <constraint firstItem="3qN-bG-mdY" firstAttribute="leading" secondItem="Scz-wG-PRP" secondAttribute="trailing" constant="27" id="6eY-Af-pQt"/>
+                <constraint firstItem="gKT-Pj-MFA" firstAttribute="top" secondItem="Scz-wG-PRP" secondAttribute="top" id="8sh-6F-oeU"/>
+                <constraint firstItem="gKT-Pj-MFA" firstAttribute="bottom" secondItem="Scz-wG-PRP" secondAttribute="bottom" id="DnZ-jj-fqq"/>
+                <constraint firstItem="Scz-wG-PRP" firstAttribute="leading" secondItem="gKT-Pj-MFA" secondAttribute="trailing" constant="27" id="EOs-EE-tUq"/>
+                <constraint firstItem="Scz-wG-PRP" firstAttribute="top" secondItem="3qN-bG-mdY" secondAttribute="top" id="Huo-6h-OxX"/>
+                <constraint firstAttribute="trailing" secondItem="Scz-wG-PRP" secondAttribute="trailing" constant="76" id="Juf-Ex-eBE"/>
+                <constraint firstItem="gKT-Pj-MFA" firstAttribute="leading" secondItem="4OY-DH-YNA" secondAttribute="trailing" constant="28" id="Q4Q-Yz-jIK"/>
+                <constraint firstAttribute="trailing" secondItem="3qN-bG-mdY" secondAttribute="trailing" constant="17" id="VCR-AS-hT2"/>
+                <constraint firstItem="3qN-bG-mdY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="YsV-zD-lLr"/>
+                <constraint firstItem="Scz-wG-PRP" firstAttribute="bottom" secondItem="3qN-bG-mdY" secondAttribute="bottom" id="dA7-AJ-hHn"/>
+                <constraint firstItem="4OY-DH-YNA" firstAttribute="bottom" secondItem="gKT-Pj-MFA" secondAttribute="bottom" id="llr-Rb-1kE"/>
+                <constraint firstItem="Scz-wG-PRP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="npX-Yb-KAR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="445" y="159"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chatHigh.png" width="512" height="512"/>
+        <image name="facebookHigh.png" width="512" height="512"/>
+        <image name="googleplusHigh.png" width="512" height="512"/>
+        <image name="twitterHigh.png" width="512" height="512"/>
+    </resources>
+</document>
